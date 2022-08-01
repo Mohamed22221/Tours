@@ -1,0 +1,193 @@
+
+//font Poppins && Tajawal
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+$sans : "Cairo", sans-serif ;
+
+//colors
+:root{
+--primary-color:#FF9900;
+--secound-color:#24242E;
+--secound-color-pold:#15141A;
+--third-color:#465D71;
+--third-color-opacity:#788897;
+--background-color: #F6F6F6;
+--shadow:0px 3px 32px $primary-color ;
+--font: #707070;
+--font-opacity: #00000029;
+--white-color:#fff;
+--black-color:#000000;
+--spacing: 0.1rem;
+--radius: 0.25rem;
+--light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+--clr-primary-1: hsl(205, 86%, 17%);
+--clr-primary-2: hsl(205, 77%, 27%);
+--clr-primary-3: hsl(205, 72%, 37%);
+--clr-primary-4: hsl(205, 63%, 48%);
+/* primary/main color */
+--clr-primary-5: hsl(205, 78%, 60%);
+/* lighter shades of primary color */
+--clr-primary-6: hsl(205, 89%, 70%);
+--clr-primary-7: hsl(205, 90%, 76%);
+--clr-primary-8: hsl(205, 86%, 81%);
+--clr-primary-9: hsl(205, 90%, 88%);
+--clr-primary-10: hsl(205, 100%, 96%);
+/* darkest grey - used for headings */
+--clr-grey-1: hsl(209, 61%, 16%);
+--clr-grey-2: hsl(211, 39%, 23%);
+--clr-grey-3: hsl(209, 34%, 30%);
+--clr-grey-4: hsl(209, 28%, 39%);
+/* grey used for paragraphs */
+--clr-grey-5: hsl(210, 22%, 49%);
+--clr-grey-6: hsl(209, 23%, 60%);
+--clr-grey-7: hsl(211, 27%, 70%);
+--clr-grey-8: hsl(210, 31%, 80%);
+--clr-grey-9: hsl(212, 33%, 89%);
+--clr-grey-10: hsl(210, 36%, 96%);
+--clr-white: #fff;
+--clr-red-dark: hsl(360, 67%, 44%);
+--clr-red-light: hsl(360, 71%, 66%);
+--clr-green-dark: hsl(125, 67%, 44%);
+--clr-green-light: hsl(125, 71%, 66%);
+--clr-black: #222;
+--transition: all 0.3s linear;
+--spacing: 0.1rem;
+--radius: 0.25rem;
+--light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+--dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+--max-width: 1170px;
+--fixed-width: 620px;
+}
+
+body{
+ background-image: url("../assets/towrsimg.jpg");
+ background-repeat: no-repeat;
+  background-size: cover;
+ font-family: $sans;
+ 
+ &::-webkit-scrollbar {
+  width: 10px;
+}
+
+&::-webkit-scrollbar-track {
+  background-color: var(--font-opacity);
+}
+
+&::-webkit-scrollbar-thumb {
+  background-color: var(--clr-primary-6);
+  border-radius: 5px;
+  
+}
+ 
+}
+html {
+ scroll-behavior: smooth;
+}
+button{
+ all: unset;
+ cursor: pointer;
+}
+*{
+ box-sizing: border-box;
+ list-style: none;
+ text-decoration: none;
+ margin: 0;
+ padding: 0;
+  
+}
+.loading{
+  margin: 10px auto;
+  text-align: center;
+}
+
+section {
+  margin: 20px 0;
+  .title{
+    text-align: center;
+    margin-bottom: 3rem;
+    .underline {
+      width: 6rem;
+      height: 0.25rem;
+      color: var(--clr-primary-5);
+      background: var(--clr-primary-5);
+      margin: 0 auto;
+
+    }
+  }
+  .single-tour{
+    
+      background: white;
+      border-radius: var(--radius);
+      margin: 2rem 0;
+      box-shadow: var(--light-shadow);
+      transition: var(--transition);
+    
+    &:hover {
+      box-shadow: var(--dark-shadow);
+    }
+     img {
+      width: 100%;
+      height: 20rem;
+      object-fit: cover;
+      border-top-right-radius: var(--radius);
+      border-top-left-radius: var(--radius)
+  }
+  .tour-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  .tour-info h4 {
+    margin-bottom: 0;
+  }
+   button {
+    background: transparent;
+    border-color: transparent;
+    text-transform: capitalize;
+    color: var(--clr-primary-5);
+    font-size: 1rem;
+    cursor: pointer;
+    padding-left: 0.25rem;
+    text-align: center;
+  }
+  .tour-price {
+    color: var(--clr-primary-5);
+    background: var(--clr-primary-10);
+    padding: 0.25rem 0.5rem;
+    border-radius: var(--radius);
+  }
+  footer {
+    padding: 1.5rem 2rem;
+  }
+   .delete-btn {
+    display: block;
+    width: 200px;
+    margin: 1rem auto 0 auto;
+    color: var(--clr-red-dark);
+    letter-spacing: var(--spacing);
+    background: transparent;
+    border: 1px solid var(--clr-red-dark);
+    padding: 0.25rem 0.5rem;
+    border-radius: var(--radius);
+  }
+  p{
+    
+    color: var(--clr-grey-1) ;
+  }
+
+
+}
+}
+.delete-btn{
+  display: block;
+  width: 200px;
+  margin: 1rem auto 0 auto;
+  color: var(--clr-red-dark);
+  letter-spacing: var(--spacing);
+  background: transparent;
+  border: 1px solid var(--clr-red-dark);
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius);
+  text-align: center;
+}
