@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Tours/static/css/main.42b44145.css",
+    "main.js": "/Tours/static/js/main.8681cc5b.js",
+    "static/media/towrsimg.jpg": "/Tours/static/media/towrsimg.db3d16360f391e5a0e55.jpg",
+    "index.html": "/Tours/index.html",
+    "main.42b44145.css.map": "/Tours/static/css/main.42b44145.css.map",
+    "main.8681cc5b.js.map": "/Tours/static/js/main.8681cc5b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.42b44145.css",
+    "static/js/main.8681cc5b.js"
+  ]
+}
